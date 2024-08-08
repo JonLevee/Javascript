@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+        <h1>Test</h1>
+        <button>Press me</button>
+        <div id="greeting"></div>
+    </body>
+    <script>
+        //src="myJavascript.js"
+          // Your JavaScript goes here!
+          //console.log("Hello, World") 
+      const button = document.querySelector("button");
+      
+      function greet() {
+      const name = prompt("What is your name?");
+      const greeting = document.querySelector("#greeting");
+      greeting.textContent = `Hello ${name}, nice to see you!`;
+      }
+      
+      button.addEventListener("click", greet);
+      
+    </script>
+</html>
+
